@@ -13,8 +13,8 @@
  }
 
 function register_styles_plugin(){
-    wp_enqueue_style('CustomStylesheet',plugins_url('ssgplugin/css/style.css'));
-    wp_enqueue_script('CustomScript',plugins_url('ssgplugin/js/script.js'),array(),null,true);
+    wp_enqueue_style('ssgstylesheet',plugins_url('ssgplugin/css/style.css'));
+    wp_enqueue_script('ssgscript',plugins_url('ssgplugin/js/script.js'),array(),null,true);
 }
 
  add_shortcode('ssgplugin', 'examplefunction');
